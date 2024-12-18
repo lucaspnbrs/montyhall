@@ -1,0 +1,33 @@
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--area-porta-largura);
+    height: var(--area-porta-altura);
+    margin: 5px;
+}
+
+.estrutura {
+    display: flex;
+    flex-grow: 1;
+}
+.porta {
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+    flex-grow: 1;
+    align-items: center;
+    padding: 15px;
+    border: 10px solid brown ;
+}
+
+.numero {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.chao {
+    height: 15px;
+    width: 80%;
+    background-color: #ddd;
+}
