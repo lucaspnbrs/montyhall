@@ -1,4 +1,5 @@
 .area {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +11,7 @@
 .estrutura {
     display: flex;
     flex-grow: 1;
+    border: 10px solid brown ;
 }
 .porta {
     display: flex;
@@ -18,7 +20,7 @@
     flex-grow: 1;
     align-items: center;
     padding: 15px;
-    border: 10px solid brown ;
+    width: 130px;
 }
 
 .numero {
@@ -30,4 +32,27 @@
     height: 15px;
     width: 80%;
     background-color: #ddd;
+}
+
+
+.macaneta {
+    height: 20px;
+    width: 20px;
+    align-self: flex-start;
+    border-radius: 10px;
+    background-color: brown;
+    position: absolute;
+    top: calc(0.45 * var(--area-porta-altura));
+}
+
+.selecionada {
+    border: 10px solid yellow ;
+}
+
+.selecionada .numero {
+    color: yellow;
+}
+
+.selecionada .macaneta {
+    background-color: yellow;
 }
